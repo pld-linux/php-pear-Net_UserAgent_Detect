@@ -12,7 +12,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	01017b2a9160a8a2afa3528615bfe48c
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/Net_UserAgent_Detect/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
