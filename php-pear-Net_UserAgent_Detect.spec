@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - determines the Web browser
 Summary(pl):	%{_pearname} - identyfikuje przegl±darkê
 Name:		php-pear-%{_pearname}
-Version:	1.1
+Version:	2.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	8459dd5da626adae46b7a6268f5a32fb
+# Source0-md5:	fee94eb3617e8561bd142a1a6f72dae6
 URL:		http://pear.php.net/package/Net_UserAgent_Detect/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
