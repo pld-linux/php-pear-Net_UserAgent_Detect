@@ -10,13 +10,13 @@ Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-BuildRequires:	rpm-php-pearprov
 URL:		http://pear.php.net/
+BuildRequires:	rpm-php-pearprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Net_UserAgent object does a number of tests on an HTTP user agent
+The Net_UserAgent object does a number of tests on an HTTP User-Agent
 string. The results of these tests are available via methods of the
 object. This module is based upon the JavaScript browser detection
 code available at
@@ -25,6 +25,13 @@ This module had many influences from the lib/Browser.php code in
 version 1.3 of Horde.
 
 %description -l pl
+Obiekt Net_UserAgent wykonuje wiele testów na polu User-Agent z
+nag³ówka HTTP. Wyniki tych testów s± dostêpne poprzez metody obiektu.
+Ten modu³ zosta³ stworzony na podstawie kodu do wykrywania
+przegl±darek z poziomu JavaScriptu, dostêpnego pod adresem
+http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
+Ten modu³ ma tak¿e wiele wp³ywów z kodu lib/Browser.php z Horde w
+wersji 1.3.
 
 %prep
 %setup -q -c
