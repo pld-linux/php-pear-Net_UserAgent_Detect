@@ -28,7 +28,7 @@ http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
 This module had many influences from the lib/Browser.php code in
 version 1.3 of Horde.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Obiekt Net_UserAgent wykonuje wiele testów na polu User-Agent z
