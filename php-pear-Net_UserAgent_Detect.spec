@@ -38,11 +38,9 @@ wersji 1.3.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd %{_pearname}-%{version}
-
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/UserAgent
 
-install *.php			$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/UserAgent
+install %{_pearname}-%{version}*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/UserAgent
 
 %clean
 rm -rf $RPM_BUILD_ROOT
