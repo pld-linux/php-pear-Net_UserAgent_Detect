@@ -8,7 +8,7 @@ Summary:	%{_pearname} - determines the Web browser
 Summary(pl):	%{_pearname} - identyfikuje przegl±darkê
 Name:		php-pear-%{_pearname}
 Version:	2.0.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
