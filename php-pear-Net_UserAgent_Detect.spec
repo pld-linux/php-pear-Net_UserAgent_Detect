@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          Net
 %define         _subclass       UserAgent
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Detect
 Summary:	%{_pearname} - determines the Web browser
 Summary(pl):	%{_pearname} - identyfikuje przegl±darkê
@@ -25,6 +26,8 @@ http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
 This module had many influences from the lib/Browser.php code in
 version 1.3 of Horde.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Obiekt Net_UserAgent wykonuje wiele testów na polu User-Agent z
 nag³ówka HTTP. Wyniki tych testów s± dostêpne poprzez metody obiektu.
@@ -33,6 +36,8 @@ przegl±darek z poziomu JavaScriptu, dostêpnego pod adresem
 http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
 Ten modu³ ma tak¿e wiele wp³ywów z kodu lib/Browser.php z Horde w
 wersji 1.3.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
