@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          Net
-%define         _subclass       UserAgent_Detect
-%define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - determines the Web browser
-Summary(pl):	%{_class}_%{_subclass} - identyfikuje przegl±darkê
+%define         _subclass       UserAgent
+%define		_pearname	%{_class}_%{_subclass}_Detect
+Summary:	%{_pearname} - determines the Web browser
+Summary(pl):	%{_pearname} - identyfikuje przegl±darkê
 Name:		php-pear-%{_pearname}
 Version:	1.0
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -39,14 +39,14 @@ wersji 1.3.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/UserAgent
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/UserAgent
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{php_pear_dir}/%{_class}/UserAgent
-%{php_pear_dir}/%{_class}/UserAgent/*.php
+%dir %{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/%{_class}/%{_subclass}/*.php
