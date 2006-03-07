@@ -15,6 +15,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	fcee7d4da95a31ef9d935edcddbd9687
 URL:		http://pear.php.net/package/Net_UserAgent_Detect/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.1.0
 Requires:	php-pear
