@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Detect
 
 Summary:	%{_pearname} - determines the Web browser
-Summary(pl):	%{_pearname} - identyfikuje przegl±darkê
+Summary(pl.UTF-8):   %{_pearname} - identyfikuje przeglÄ…darkÄ™
 Name:		php-pear-%{_pearname}
 Version:	2.2.0
 Release:	1
@@ -34,20 +34,20 @@ version 1.3 of Horde.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Obiekt Net_UserAgent wykonuje wiele testów na polu User-Agent z
-nag³ówka HTTP. Wyniki tych testów s± dostêpne poprzez metody obiektu.
-Ten modu³ zosta³ stworzony na podstawie kodu do wykrywania
-przegl±darek z poziomu JavaScriptu, dostêpnego pod adresem
+%description -l pl.UTF-8
+Obiekt Net_UserAgent wykonuje wiele testÃ³w na polu User-Agent z
+nagÅ‚Ã³wka HTTP. Wyniki tych testÃ³w sÄ… dostÄ™pne poprzez metody obiektu.
+Ten moduÅ‚ zostaÅ‚ stworzony na podstawie kodu do wykrywania
+przeglÄ…darek z poziomu JavaScriptu, dostÄ™pnego pod adresem
 http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
-Ten modu³ ma tak¿e wiele wp³ywów z kodu lib/Browser.php z Horde w
+Ten moduÅ‚ ma takÅ¼e wiele wpÅ‚ywÃ³w z kodu lib/Browser.php z Horde w
 wersji 1.3.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -56,7 +56,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
