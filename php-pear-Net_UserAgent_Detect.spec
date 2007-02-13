@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Detect
 
 Summary:	%{_pearname} - determines the Web browser
-Summary(pl.UTF-8):   %{_pearname} - identyfikuje przeglądarkę
+Summary(pl.UTF-8):	%{_pearname} - identyfikuje przeglądarkę
 Name:		php-pear-%{_pearname}
 Version:	2.2.0
 Release:	1
@@ -47,7 +47,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
