@@ -7,13 +7,14 @@
 Summary:	%{_pearname} - determines the Web browser
 Summary(pl.UTF-8):	%{_pearname} - identyfikuje przeglądarkę
 Name:		php-pear-%{_pearname}
-Version:	2.3.0
+Version:	2.4.0
 Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f2ceeeb15c7b30e82bc6045b93e366c4
+# Source0-md5:	861df334ae59f0502b9af53e4397f97f
+Patch0:		%{name}-path.patch
 URL:		http://pear.php.net/package/Net_UserAgent_Detect/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -61,6 +62,7 @@ Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -75,6 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/.registry/*.reg
+%{php_pear_dir}/%{_class}/%{_subclass}/Detect
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 
 %files tests
