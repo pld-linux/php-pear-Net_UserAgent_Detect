@@ -1,15 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Net
-%define		_subclass	UserAgent
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}_Detect
-
+%define		_pearname	Net_UserAgent_Detect
 Summary:	%{_pearname} - determines the Web browser
 Summary(pl.UTF-8):	%{_pearname} - identyfikuje przeglądarkę
 Name:		php-pear-%{_pearname}
 Version:	2.5.2
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -19,7 +15,7 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.1.0
-Requires:	php-pear
+Requires:	php-pear >= 4:1.3-4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,7 +45,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
 AutoReq:	no
 
@@ -73,10 +69,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}/Detect
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%{php_pear_dir}/Net/UserAgent/Detect.php
+%{php_pear_dir}/Net/UserAgent/Detect
 
 %files tests
 %defattr(644,root,root,755)
